@@ -141,17 +141,13 @@ public class Practice {
      */
     public static int getSpaceRabbitDays(int startRabbitValue, int requiredRabbits) {
 
-        int days = 0;
+        int days = 1;
 
         while (startRabbitValue < requiredRabbits) {
-            days++;
             startRabbitValue *= 2;
-
-            if (startRabbitValue == requiredRabbits) {
-                break;
-            }
+            days++;
         }
-        days++;
+
         return days;
     }
 
